@@ -1,0 +1,2 @@
+# Kazamoyo.com.linkide
+Education
