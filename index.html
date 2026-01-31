@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Florian AI Life Mentor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <meta name="description" content="Premium AI Life Mentor – Motivation, Guidance, and Paid Support by Florian">
+  <meta name="author" content="Florian Felisian">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: #e5e7eb;
+    }
+    header {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #38bdf8;
+    }
+    header p {
+      opacity: 0.8;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: #020617;
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 25px rgba(56,189,248,0.15);
+    }
+    h2 {
+      color: #22c55e;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 14px 22px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 8px;
+      transition: 0.3s;
+    }
+    .btn-main { background: #38bdf8; color: #020617; }
+    .btn-main:hover { opacity: 0.85; }
+
+    .btn-pay { background: #22c55e; color: #022c22; }
+    .btn-coffee { background: #facc15; color: #422006; }
+    .btn-paypal { background: #60a5fa; color: #020617; }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    .contact-box p {
+      margin: 6px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Florian AI Life Mentor</h1>
+  <p>High-Level Guidance • Motivation • Paid Mentorship 🌍</p>
+</header>
+
+<section>
+
+  <!-- ADVICE -->
+  <div class="card">
+    <h2>AI Daily Advice</h2>
+    <p id="advice">Click below to receive premium life advice.</p>
+    <button class="btn-main" onclick="toaUshauri()">Get Advice</button>
+  </div>
+
+  <!-- PAID SERVICES -->
+  <div class="card">
+    <h2>Premium Paid Services</h2>
+    <p>✔ Personal Mentorship<br>✔ Life Guidance<br>✔ One-on-One Support</p>
+
+    <button class="btn-pay" onclick="mobilePay()">Tanzania Mobile Money</button>
+    <button class="btn-paypal" onclick="paypal()">PayPal</button>
+    <button class="btn-coffee" onclick="coffee()">Buy Me a Coffee</button>
+  </div>
+
+  <!-- SUPPORT -->
+  <div class="card">
+    <h2>Support This Project ❤️</h2>
+    <p>
+      <strong>M-Pesa:</strong> 0765 417 146<br>
+      <strong>Airtel Money:</strong> 0787 504 216
+    </p>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="card contact-box">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:florianfelisian@gmail.com">florianfelisian@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/255765417146">+255 765 417 146</a></p>
+    <p>GitHub: <a href="https://github.com/florianfelisian26-ops">github.com/florianfelisian26-ops</a></p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 | Made with ❤️ by <strong>Florian</strong></p>
+</footer>
+
+<script>
+const ushauri = [
+  "Your mindset is your greatest asset.",
+  "Consistency beats motivation every time.",
+  "Start now, perfection comes later.",
+  "Your skills will pay you forever.",
+  "Think global, act daily."
+];
+
+function toaUshauri() {
+  const random = Math.floor(Math.random() * ushauri.length);
+  document.getElementById("advice").innerText = ushauri[random];
+}
+
+function mobilePay() {
+  alert("Pay via M-Pesa: 0765417146 or Airtel Money: 0787504216");
+}
+
+function paypal() {
+  window.open("https://www.paypal.me/YOUR_PAYPAL_USERNAME", "_blank");
+}
+
+function coffee() {
+  window.open("https://www.buymeacoffee.com/YOUR_USERNAME", "_blank");
+}
+</script>
+
+</body>
+</html>
